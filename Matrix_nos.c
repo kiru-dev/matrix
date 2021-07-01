@@ -25,10 +25,10 @@ int main()
     printf("\nEnter a number\n");
     scanf("%d", &b);
 
-    printf("\nEnter a row position starting from zero\n");
+    printf("\nEnter a row position\n");
     scanf("%d", &p);
     
-    printf("\nEnter a column position starting from zero\n");
+    printf("\nEnter a column position\n");
     scanf("%d", &q);
 
     for(i=1;i<=n;i++)
