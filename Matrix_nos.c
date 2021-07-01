@@ -9,13 +9,13 @@ int main()
     scanf("%d", &n);
 
     //displaying matrix
-    
-    for(int i=0;i<n;i++)
+
+    for(int i=1;i<=n;i++)
     {
-        for(int j=0;j<n;j++)
+        for(int j=1;j<=n;j++)
         {
             printf("*\t");
-            if(j==n-1)
+            if(j==n)
             {
                 printf("\n");
             }
@@ -31,37 +31,37 @@ int main()
     printf("\nEnter a column position starting from zero\n");
     scanf("%d", &q);
 
-    for(i=0;i<n;i++)
+    for(i=1;i<=n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=1;j<=n;j++)
         {
             if(i==p && j==q)
            {
-              a[i][j]=b;
+              a[i-1][j-1]=b;
            }
            else
            {
-              a[i][j]='*';
+              a[i-1][j-1]='*';
            }
         }
     }
 
     printf("\nDisplaying matrix\n");
 
-    for(i=0;i<n;i++)
+    for(i=1;i<=n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=1;j<=n;j++)
         {
             if(i==p && j==q)
             {
-               printf("%d\t", a[i][j]);
-               if(j==n-1)
+               printf("%d\t", a[i-1][j-1]);
+               if(j==n)
                 printf("\n");
             }
             else
             {
-               printf("%c\t", a[i][j]);
-               if(j==n-1)
+               printf("%c\t", a[i-1][j-1]);
+               if(j==n)
                 printf("\n");
             }
         }
